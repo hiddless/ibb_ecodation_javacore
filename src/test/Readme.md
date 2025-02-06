@@ -1,9 +1,9 @@
 ## Önemli linkler
-```sh 
-Çalışma Linki:https://www.w3schools.com/java/default.asp
-git hub:https://github.com/hiddless/ibb_ecodation_javacore
-
-```
+Çalışma Linki: https://www.w3schools.com/java/default.asp
+git hub: https://github.com/hiddless/ibb_ecodation_javacore
+Jdk: https://www.oracle.com/tr/java/technologies/downloads/#jdk23-windows
+IntelliJ IDEA Community Edition: https://www.jetbrains.com/idea/download/?section=windows
+Git: https://git-scm.com/downloads
 
 ## Git
 ```sh
