@@ -28,3 +28,11 @@ Java case sensitive bir dildir (Küçük büyük harfe duyarlılığı yüksek b
 
 ```
 ---
+
+
+## Java Core (Primitive Types)
+```sh 
+
+```
+
+---

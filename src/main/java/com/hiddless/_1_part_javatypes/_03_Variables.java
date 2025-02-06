@@ -14,6 +14,8 @@ public class _03_Variables {
          */
 
         //veri isimlendirmeleri
+        // Anlamlı ve açıklayıcı isimler seç.
+
         // 1-) isim, veya sıfat, zamir kullanmamız lazım.
         int schoolNumber = 23;
         System.out.println(schoolNumber);
@@ -32,7 +34,16 @@ public class _03_Variables {
         //int 81schoolNumber=11; // sayı ile başlayamazsın kullanamazsın
         //int ~schoolNumber=11; // özel simge başlanmaz
         //int ``schoolNumber=11; // gibi özel simgeler ilede başlanılmaz. SADECE $ VE _
+        //SystemOut school-Number // gibi kebab-case kullanılmaz
+        // int school_number= 66; // yazarken boşluk kullanılmaz
 
+        // yazma
+        float totalsalary=14.54323f;
+        System.out.println(totalsalary);
+
+        // SABIT
+        final int MAX_STUDENTS=100;
+        System.out.println(MAX_STUDENTS);
 
     }
 }
