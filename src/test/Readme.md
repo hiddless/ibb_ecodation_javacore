@@ -1,3 +1,10 @@
+## Önemli linkler
+```sh 
+Çalışma Linki:https://www.w3schools.com/java/default.asp
+git hub:https://github.com/hiddless/ibb_ecodation_javacore
+
+```
+
 ## Git
 ```sh
 git init
