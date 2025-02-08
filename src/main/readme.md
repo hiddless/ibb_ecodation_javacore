@@ -46,7 +46,7 @@ Java case sensitive bir dildir (Küçük büyük harfe duyarlılığı yüksek b
 ---
 ### Maven Nedir?
 ```sh 
-Maven, Java projelerini oluşturmak, yönetmek, ve otomatikleştirmek için kullanılan bir build automation (inşa otomasyonu)aracıdır.
+* Maven, Java projelerini oluşturmak, yönetmek, ve otomatikleştirmek için kullanılan bir build automation (inşa otomasyonu)aracıdır.
 Apache tarafından geliştirilmiştir ve özellikle Java projelerinde bağımlılık yönetimi, derleme, test etme ve dağıtım süreçlerini kolaylaştırır.
 Maven, XML tabanlı bir yapılandırma dosyası olan pom.xml kullanarak projenin yapılandırmasını ve bağımlılıklarını yönetir.
 ```
