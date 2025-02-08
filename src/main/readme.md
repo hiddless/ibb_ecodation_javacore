@@ -4,6 +4,7 @@ git hub: https://github.com/hiddless/ibb_ecodation_javacore
 Jdk: https://www.oracle.com/tr/java/technologies/downloads/#jdk23-windows
 IntelliJ IDEA Community Edition: https://www.jetbrains.com/idea/download/?section=windows
 Git: https://git-scm.com/downloads
+Copy Paste:
 
 ## Git
 ```sh
@@ -40,6 +41,23 @@ Java case sensitive bir dildir (Küçük büyük harfe duyarlılığı yüksek b
 ## Java Core (Primitive Types)
 ```sh 
 
+```
+
+---
+### Maven Nedir?
+```sh 
+Maven, Java projelerini oluşturmak, yönetmek, ve otomatikleştirmek için kullanılan bir build automation (inşa otomasyonu)aracıdır.
+Apache tarafından geliştirilmiştir ve özellikle Java projelerinde bağımlılık yönetimi, derleme, test etme ve dağıtım süreçlerini kolaylaştırır.
+Maven, XML tabanlı bir yapılandırma dosyası olan pom.xml kullanarak projenin yapılandırmasını ve bağımlılıklarını yönetir.
+```
+### Maven’in Sağladıkları:
+
+* Bağımlılık Yönetimi: Projeye eklenmesi gereken kütüphaneleri otomatik olarak indirir.
+* Proje Yapılandırması: Projeyi standart bir yapıda düzenler.
+* Otomatik Derleme: Projeyi derler (mvn compile).
+* Test Çalıştırma: JUnit ve TestNG gibi test araçlarıyla testleri çalıştırır (mvn test).
+* Paketleme: Projeyi jar veya war formatında paketler (mvn package).
+* Dağıtım Yönetimi: Uygulamayı uzak sunuculara veya depolara gönderir (mvn deploy).
 ```
 
 ---
