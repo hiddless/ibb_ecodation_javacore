@@ -2,7 +2,7 @@ package com.hiddless._1_part_javatypes;
 
 import java.util.Scanner;
 
-public class _09_Answers {
+public class _09_Answers1 {
     public static void main(String[] args) {
 
         //İlk sorunun cevabı
