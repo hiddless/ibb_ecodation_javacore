@@ -2,6 +2,7 @@ package com.hiddless._1_part_javatypes;
 
 import java.util.Scanner;
 
+// Santigrat (Celsius) - Fahrenheit Dönüştürücü
 public class _10_Answers2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
