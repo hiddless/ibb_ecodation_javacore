@@ -10,9 +10,11 @@ public class _Answer4_ {
         int sum = 0;
                 for (int i = 1; i <= number; i++) {
                     if (i == 47){
+                        System.out.println("Verdiğiniz sayıda 47 olduğu için bunu toplamaya dahil etmez");
                         continue;
                     }
-                    if (sum + i > 100) {
+                    if (i > 100) {
+                        System.out.println("Sadece 100'e kadar olan sayılarda toplama yapabilir");
                         break;
                     }
                     sum += i;
