@@ -22,5 +22,26 @@ public class _13_String {
 
         // ile mi başlıyor
         System.out.println(vocabulary1.startsWith("T") + "T ile mi başlıyor");
+
+        // Contains (X kelime geçiyor mu?)
+        System.out.println("Geçiyor mu? "+vocabulary2.contains("Boom"));
+
+        // Replace (değiştirmek)
+        System.out.println("Değiştir: "+vocabulary2.replace("Boom","Tommy"));
+
+        // Birleştirme
+        System.out.println(vocabulary1.concat("pool").concat("81"));
+
+        // String builder
+        StringBuilder stringBuilder= new StringBuilder();
+        stringBuilder.append(vocabulary1).append("pool").append("81");
+        String dataToString= stringBuilder.toString();
+        System.out.println(dataToString);
+
+        // String Buffer (daha eski ve yavaş.Thread saver yapar. Daha güvenli)
+        StringBuffer stringBuffer= new StringBuffer();
+        stringBuffer.append(vocabulary1).append("pool").append("81");
+        String dataToString2= stringBuffer.toString();
+        System.out.println(dataToString2);
     }
 }
