@@ -44,7 +44,7 @@ public class _13_String {
         String dataToString2= stringBuffer.toString();
         System.out.println(dataToString2);
 
-        // Hash code
+        // Hash Code
         System.out.println(vocabulary1.hashCode());
         System.out.println(vocabulary2.hashCode());
     }
