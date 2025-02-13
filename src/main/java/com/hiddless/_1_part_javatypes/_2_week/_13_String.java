@@ -43,5 +43,9 @@ public class _13_String {
         stringBuffer.append(vocabulary1).append("pool").append("81");
         String dataToString2= stringBuffer.toString();
         System.out.println(dataToString2);
+
+        // Hash code
+        System.out.println(vocabulary1.hashCode());
+        System.out.println(vocabulary2.hashCode());
     }
 }
