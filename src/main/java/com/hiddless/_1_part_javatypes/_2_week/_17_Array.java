@@ -46,7 +46,7 @@ public class _17_Array {
         // Dizilerde Sıralama (Küçükten Büyüğe Doğru sıralama)
         Arrays.sort(city);
 
-        // for each
+        // for each u
         for (String temp : city) {
             System.out.println(_15_4_SpecialColor.BLUE + temp + _15_4_SpecialColor.RESET);
         }
