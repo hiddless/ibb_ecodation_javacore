@@ -38,4 +38,3 @@ public class _16_Exception {
         throw new NullPointerException("Neden boş verdiniz");
     }
 }
-
