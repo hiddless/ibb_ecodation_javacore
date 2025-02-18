@@ -1,5 +1,7 @@
 package com.hiddless._1_part_javatypes._2_week;
 
+import com.hiddless._1_part_javatypes.ultis.SpecialColor;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
@@ -26,7 +28,7 @@ public class _17_Array {
         String[] city = arrayMethod1();
         // for each
         for (int i = 0; i < city.length; i++) {
-            System.out.println(_15_4_SpecialColor.PURPLE + city[i] + _15_4_SpecialColor.RESET);
+            System.out.println(SpecialColor.PURPLE + city[i] + SpecialColor.RESET);
         }
     }
 
@@ -35,7 +37,7 @@ public class _17_Array {
         String[] city = arrayMethod1();
         // for each
         for (String temp : city) {
-            System.out.println(_15_4_SpecialColor.YELLOW + temp + _15_4_SpecialColor.RESET);
+            System.out.println(SpecialColor.YELLOW + temp + SpecialColor.RESET);
         }
     }
 
@@ -48,7 +50,7 @@ public class _17_Array {
 
         // for each u
         for (String temp : city) {
-            System.out.println(_15_4_SpecialColor.BLUE + temp + _15_4_SpecialColor.RESET);
+            System.out.println(SpecialColor.BLUE + temp + SpecialColor.RESET);
         }
     }
 
@@ -61,7 +63,7 @@ public class _17_Array {
 
         // for each
         for (String temp : city) {
-            System.out.println(_15_4_SpecialColor.CYAN + temp + _15_4_SpecialColor.RESET);
+            System.out.println(SpecialColor.CYAN + temp + SpecialColor.RESET);
         }
     }
 
@@ -81,7 +83,7 @@ public class _17_Array {
 
         // for each
         for (int temp : number) {
-            System.out.println(_15_4_SpecialColor.BLUE + temp + _15_4_SpecialColor.RESET);
+            System.out.println(SpecialColor.BLUE + temp + SpecialColor.RESET);
         }
     }
 
