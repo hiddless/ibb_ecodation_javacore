@@ -1,4 +1,5 @@
-package com.hiddless._1_part_javatypes.week3.project;
+package com.hiddless._1_part_javatypes.week3.project_step2_file;
+
 import com.hiddless._1_part_javatypes.ultis.SpecialColor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,59 +9,61 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.Locale;
 
-// LOMBOK
 @AllArgsConstructor
 @Builder
 @ToString
 @EqualsAndHashCode
 
-// Student
 public class StudentDto implements Serializable {
 
-    // Serileştirme
-    private static final long serialVersionUID = 5563646556456565465L;
+    /// Serileştirme
+    private static final long serialVersionUID = 556364556456565465L;
 
-    // Field
+    /// File
     private Integer id;
     private String name;
     private String surname;
-    private Double midTerm;      // Vize notu
-    private Double finalTerm;    // Final notu
-    private Double resultTerm;   // Sonuç Notu: (Vize%40 + Final%60)
-    private LocalDate birthDate; // Doğum günü
-    private Date createdDate; // Sistem otomatik tarihi
+    private EStudentType eStudentType;
+    private Double midTerm;
+    private Double finalTerm;
+    private Double resultTerm;
+    private LocalDate birthDate;
+    private Date createdDate;
 
-    // static (Nesne boyunca 1 kere oluşturulur)
+    /// static
     static {
         System.out.println(SpecialColor.BLUE+ "static StudentDto Yüklendi"+SpecialColor.RESET);
     }
 
-    // Parametresiz Constructor
+    /// Parametresiz Constructer
     public StudentDto() {
     }
 
-    // Parametreli Constructor
-    public StudentDto(Integer id, String name, String surname, Double midTerm, Double finalTerm, LocalDate birthDate) {
+    /// Parametreli Constructer
+    public StudentDto(Integer id, String name, String surname, Double midTerm, Double finalTerm, LocalDate birthDate, EStudentType eStudentType) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.midTerm = midTerm;
         this.finalTerm = finalTerm;
         this.birthDate = birthDate;
+        this.createdDate = new Date(System.currentTimeMillis());
         this.resultTerm= calculateResult();
+        this.eStudentType = eStudentType;
     }
 
-    // Metotlar
+    /// Metotlar
     // Vize ve Final Calculate
-    private Double calculateResult() {
-        if(midTerm==null || finalTerm==null)
+    private Double calculateResult(){
+        if (midTerm==null || finalTerm==null)
             return 0.0;
         else
             return (midTerm*0.4+finalTerm*0.6);
     }
 
-    // Getter And Setter
+    // Getter and Setter
     public Integer getId() {
         return id;
     }
@@ -73,7 +76,7 @@ public class StudentDto implements Serializable {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name){
         this.name = name;
     }
 
@@ -81,23 +84,17 @@ public class StudentDto implements Serializable {
         return surname;
     }
 
-    public void setSurname(String surname) {
+    public void setSurname(String surname){
         this.surname = surname;
     }
 
-    public LocalDate getBirthDate() {
+    public LocalDate getBirthDate(){
         return birthDate;
     }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
-
     public Date getCreatedDate() {
         return createdDate;
     }
-
-    public void setCreatedDate(Date createdDate) {
+    public void setBirthDate(Date createdDate) {
         this.createdDate = createdDate;
     }
 
@@ -105,8 +102,8 @@ public class StudentDto implements Serializable {
         return midTerm;
     }
 
-    public void setMidTerm(Double midTerm) {
-        this.midTerm = midTerm;
+    public void setMidTerm(Double midTerm){
+        this.midTerm= midTerm;
         this.resultTerm= calculateResult();
     }
 
@@ -116,7 +113,7 @@ public class StudentDto implements Serializable {
 
     public void setFinalTerm(Double finalTerm) {
         this.finalTerm = finalTerm;
-        this.resultTerm= calculateResult();
+        this.resultTerm = calculateResult();
     }
 
     public Double getResultTerm() {
@@ -126,4 +123,12 @@ public class StudentDto implements Serializable {
     public void setResultTerm(Double resultTerm) {
         this.resultTerm = resultTerm;
     }
-} //end Student
+
+    public EStudentType geteStudentType(){
+        return eStudentType;
+    }
+
+    public void seteStudentType(EStudentType eStudentType) {
+        this.eStudentType = eStudentType;
+    }
+}
