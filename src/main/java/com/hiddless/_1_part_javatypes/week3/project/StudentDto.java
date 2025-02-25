@@ -1,4 +1,5 @@
 package com.hiddless._1_part_javatypes.week3.project;
+import com.hiddless._1_part_javatypes.ultis.SpecialColor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -13,75 +14,116 @@ import java.util.Date;
 @Builder
 @ToString
 @EqualsAndHashCode
+
+// Student
 public class StudentDto implements Serializable {
-    private static final long serialVersionUID =5563646556456565465L;
+
+    // Serileştirme
+    private static final long serialVersionUID = 5563646556456565465L;
 
     // Field
     private Integer id;
     private String name;
     private String surname;
-    private LocalDate birthDate;
-    private Date createdDate;
-    private Double grade;
+    private Double midTerm;      // Vize notu
+    private Double finalTerm;    // Final notu
+    private Double resultTerm;   // Sonuç Notu: (Vize%40 + Final%60)
+    private LocalDate birthDate; // Doğum günü
+    private Date createdDate; // Sistem otomatik tarihi
 
+    // static (Nesne boyunca 1 kere oluşturulur)
     static {
-
-    }
-    public StudentDto(){
-
+        System.out.println(SpecialColor.BLUE+ "static StudentDto Yüklendi"+SpecialColor.RESET);
     }
 
-    public StudentDto(Integer id, String name, String surname, LocalDate birthDate, Double grade){
-        this.id=id;
-        this.name= name;
-        this.surname= surname;
-        this.birthDate= birthDate;
-        this.grade= grade;
+    // Parametresiz Constructor
+    public StudentDto() {
+    }
+
+    // Parametreli Constructor
+    public StudentDto(Integer id, String name, String surname, Double midTerm, Double finalTerm, LocalDate birthDate) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.midTerm = midTerm;
+        this.finalTerm = finalTerm;
+        this.birthDate = birthDate;
+        this.resultTerm= calculateResult();
     }
 
     // Metotlar
-    public Integer getId(){
+    // Vize ve Final Calculate
+    private Double calculateResult() {
+        if(midTerm==null || finalTerm==null)
+            return 0.0;
+        else
+            return (midTerm*0.4+finalTerm*0.6);
+    }
+
+    // Getter And Setter
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id){
-        this.id= id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name){
-        this.name= name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getSurname(){
+    public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname){
-        this.surname= surname;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
-    public LocalDate getBirthDate(){
+
+    public LocalDate getBirthDate() {
         return birthDate;
     }
-    public void setBirthDate(LocalDate birthDate){
-        this.birthDate= birthDate;
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
 
-    public Double getGrade(){
-        return grade;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setGrade(Double grade){
-        this.grade= grade;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public static void main(String[] args) {
-
+    public Double getMidTerm() {
+        return midTerm;
     }
 
-    public void setCreatedDate(Date date) {
+    public void setMidTerm(Double midTerm) {
+        this.midTerm = midTerm;
+        this.resultTerm= calculateResult();
     }
-}
+
+    public Double getFinalTerm() {
+        return finalTerm;
+    }
+
+    public void setFinalTerm(Double finalTerm) {
+        this.finalTerm = finalTerm;
+        this.resultTerm= calculateResult();
+    }
+
+    public Double getResultTerm() {
+        return resultTerm;
+    }
+
+    public void setResultTerm(Double resultTerm) {
+        this.resultTerm = resultTerm;
+    }
+} //end Student
