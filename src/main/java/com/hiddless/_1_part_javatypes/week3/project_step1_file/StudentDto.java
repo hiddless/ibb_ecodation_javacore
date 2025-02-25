@@ -7,9 +7,7 @@ import lombok.ToString;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.Locale;
 
 @AllArgsConstructor
 @Builder
@@ -41,6 +39,10 @@ public class StudentDto implements Serializable {
         this.surname= surname;
         this.birthDate=birthDate;
         this.grade=grade;
+    }
+
+    public StudentDto() {
+        
     }
 
     /// Metotlar
@@ -88,4 +90,6 @@ public class StudentDto implements Serializable {
     }
 
 
+    public void setCreatedDate(Date date) {
+    }
 }
