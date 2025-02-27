@@ -1,4 +1,4 @@
-package com.hiddless._1_part_javatypes._2_week;
+package com.hiddless.tutorials._2_week;
 
 public class _12_loop_while {
     public static void main(String[] args) {

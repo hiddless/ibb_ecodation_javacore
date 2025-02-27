@@ -1,4 +1,4 @@
-package com.hiddless._1_part_javatypes._2_week;
+package com.hiddless.tutorials._2_week;
 
 public class _14_Methods {
     // 3-) Return lu parametresiz

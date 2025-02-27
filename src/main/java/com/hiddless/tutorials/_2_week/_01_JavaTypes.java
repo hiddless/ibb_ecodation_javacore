@@ -1,4 +1,4 @@
-package com.hiddless._1_part_javatypes;
+package com.hiddless.tutorials._2_week;
 
 // single comment
 /*

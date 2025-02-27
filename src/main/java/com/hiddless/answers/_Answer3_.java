@@ -1,4 +1,4 @@
-package com.hiddless._1_part_javatypes;
+package com.hiddless.answers;
 
 import java.util.Scanner;
 

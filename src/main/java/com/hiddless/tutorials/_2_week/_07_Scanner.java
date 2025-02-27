@@ -1,4 +1,4 @@
-package com.hiddless;
+package com.hiddless.tutorials._2_week;
 
 import java.util.Scanner;
 
